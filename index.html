@@ -1,13 +1,136 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <title>Meghans</title>
+  <meta charset="UTF-8" />
+  <title>多语言示例与名片展示</title>
+  <!-- 引入Google字体 -->
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet" />
+  <style>
+    .times-font {
+    font-family: "Times New Roman", Times, serif;
+    }
+    body {
+      font-family: "Times New Roman", sans-serif;
+      text-align: center;
+      padding: 20px;
+      background: #f9f9f9;
+    }
+    h1 {
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+    .fancy-text {
+      font-family: "Brush Script MT", cursive, serif;
+      font-size: 30px;
+      margin: 2px 0; /* 上下间距4px */;
+    }
+    /* 名片容器，弹性布局 */
+    .card-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 40px;
+    }
+    /* 单张名片样式 */
+    .card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      width: 220px;
+      padding: 15px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    }
+    .card img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+    .card h2 {
+      margin: 10px 0 5px 0;
+    }
+    .card p {
+      margin: 0 0 10px 0;
+      color: #555;
+    }
+    .card a {
+      text-decoration: none;
+      color: #007acc;
+      font-weight: bold;
+    }
+    .card a:hover {
+      text-decoration: underline;
+    }
+    hr {
+    border: none;
+    height: 2px;
+    background-color: #333;
+    margin: 20px 0;
+    }
+    .box {
+      border: 2px solid #333;
+      padding: 10px;
+      width: 300px;
+      margin: 20px auto;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
-  <h1>Hello, Meghans!</h1>
-  <p>We all love you!</p>
-  <p>你是谁？</p>
-  <picture> where? is the link ?</picture>
+  <h1 style="font-size: 90px; font-family: 'Libre Baskerville', serif;">
+  
+    We all love Meghan Slaninko
+  </h1>
+  <div style="width: 80%; margin: 0 auto;">
+  <img src="images/handpic.jpg" alt="Meg" style="width: 100%;" />
+  </div>
+  <hr />
+  <h3><span class="times-font">"We all love Meghan Slaninko" is a personal website created solely for individual 
+  non-commercial purposes such as HTML learning, collection, and information organization. 
+  This is not the official website of Meghan Slaninko (or Alexa Grace). 
+  Visitors are advised to verify the authenticity.</span></h3>
+  
+  
+  <hr />
+
+    <div class="fancy-text" lang="en">We all love Meghan Slaninko</div>
+    <div class="fancy-text" lang="fr">Nous aimons tous Meghan Slaninko</div>
+    <div class="fancy-text" lang="ru">Мы все любим Меган Сланинко</div>
+    <div class="fancy-text" lang="zh">我们都爱 梅哥汗·斯兰宁考</div>
+    <div class="fancy-text" lang="es">Todos amamos a Meghan Slaninko</div>
+    <div class="fancy-text" lang="ar" dir="rtl">نحن جميعًا نحب ميغان سلانيكو</div>
+    <div class="fancy-text" lang="ja">私たちはみんなメーガン・スラニンコが大好きです</div>
+    <div class="fancy-text" lang="ko">우리는 모두 메건 슬라닌코를 사랑합니다</div>
+    <div class="fancy-text" lang="hi">हम सभी मेघन स्लानिनको से प्यार करते हैं</div>
+
+  <hr />
+  <!-- <h1>The prople</h1> -->
+  <div class="card-container">
+    <div class="card">
+      <img src="images/person1.jpg" alt="Alexa Grace" />
+      <h2>Alexa Grace</h2>
+      <p>We all love her</p>
+      <a href="subpage1.html">查看详情</a>
+    </div>
+    <div class="card">
+      <img src="images/person2.jpg" alt="李四" />
+      <h2>李四</h2>
+      <p>团队成员</p>
+      <a href="subpage2.html">查看详情</a>
+    </div>
+    <div class="card">
+      <img src="images/person3.jpg" alt="王五" />
+      <h2>王五</h2>
+      <p>团队成员</p>
+      <a href="subpage3.html">查看详情</a>
+    </div>
+  </div>
 </body>
 </html>
