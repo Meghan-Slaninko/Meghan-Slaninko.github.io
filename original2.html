@@ -1,0 +1,306 @@
+<!-- pagecrypt original2.html index.html 314159 -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>We all love Meghan Slaninko</title>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: "Times New Roman", sans-serif;
+      text-align: center;
+      padding: 0;
+      margin: 0;
+      background: #000;
+      color: white;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      backdrop-filter: blur(6px);
+      font-family: 'Times New Roman', serif;
+      padding: 15px 0;
+      text-align: center;
+      z-index: 1000;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    nav a {
+      font-size: 20px;
+      font-weight: bold;
+      color: white;
+      text-decoration: none;
+      padding: 8px 16px;
+      border-radius: 8px;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+    nav a:hover {
+      background: rgba(255, 255, 255, 0.2);
+      color: #ffd700;
+    }
+
+    h1 {
+      font-weight: bold;
+      margin: 0;
+      padding: 100px 0 30px 0;
+      font-size: 70px;
+      font-family: 'Libre Baskerville', serif;
+      color: white;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 40px;
+        padding: 80px 20px 20px;
+      }
+    }
+
+    .hero {
+      position: relative;
+      background: url('images/world-map.jpg') no-repeat center center;
+      background-size: cover;
+      height: auto;
+      padding-bottom: 40px;
+      margin-top: 80px;
+      -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 70%, rgba(0,0,0,0) 100%);
+    }
+
+    .hero img {
+      width: 80%;
+      max-width: 400px;
+      border-radius: 15px;
+      margin-top: 20px;
+    }
+
+    .fancy-text {
+      font-family: "Brush Script MT", cursive, serif;
+      font-size: 30px;
+      margin: 5px 0;
+    }
+
+    hr {
+      border: none;
+      height: 2px;
+      background-color: #333;
+      margin: 20px 0;
+    }
+
+    .search-container {
+      margin: 40px auto;
+    }
+
+    .search-container input {
+      padding: 10px;
+      width: 90%;
+      max-width: 300px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 40px;
+      padding: 0 10px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 300px;
+      padding: 15px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    }
+
+    .card img {
+      object-fit: cover;
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      margin-bottom: 0;
+    }
+
+    .card img.extra-photo {
+      width: 90%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 2px;
+      margin-top: 0;
+    }
+
+    .card h2 {
+      margin: 10px 0 5px;
+    }
+
+    .card p {
+      margin: 0 0 10px;
+      color: #555;
+    }
+
+    .card a {
+      text-decoration: none;
+      color: #007acc;
+      font-weight: bold;
+    }
+
+    .card a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="#top">Home</a>
+  <a href="#search">People</a>
+  <a href="News/news.html">News</a>
+</nav>
+
+<div id="top" class="hero">
+  <h1>We all love Meghan Slaninko</h1>
+  <img src="images/handpic.jpg" alt="Meg" />
+  <div class="fancy-text" lang="en">We all love Meghan Slaninko</div>
+  <div class="fancy-text" lang="fr">Nous aimons tous Meghan Slaninko</div>
+  <div class="fancy-text" lang="ru">Мы все любим Меган Сланинко</div>
+  <div class="fancy-text" lang="zh">我们都爱 梅哥汗·斯兰宁考</div>
+  <div class="fancy-text" lang="es">Todos amamos a Meghan Slaninko</div>
+  <div class="fancy-text" lang="ar" dir="rtl">نحن جميعًا نحب ميغان سلانيكو</div>
+  <div class="fancy-text" lang="ja">私たちはみんなメーガン・スラニンコが大好きです</div>
+  <div class="fancy-text" lang="ko">우리는 모두 메건 슬라닌코를 사랑합니다</div>
+  <div class="fancy-text" lang="hi">हम सभी मेघन स्लानिनको से प्यार करते हैं</div>
+</div>
+
+<hr>
+  <h3><span class="times-font">"We all love Meghan Slaninko" is a personal website for private use and only for non-commercial purposes, 
+            such as HTML learning, collecting publicly released information, inspiring fantasy dreams, etc.
+            This is not the official website of Megan Slaninko (or Alexa Grace), but just a fans club. Visitors are advised not to misunderstand and verify the authenticity by themselves.
+            The information we collect is based on the information publicly released by public figures. If our information violates your personal privacy, please contact us to delete it.
+            On this basis, all the names (including the name of Meghan Slaninko and Alexa Grace), introductions and stories on this website are fictitious content and have nothing to do with the real world.
+    <br>
+            “我们都爱梅哥汗·斯兰宁考”是一个私人网站，仅供非商业用途的私人人使用，例如HTML学习、收集公开发布信息、激发奇幻梦想等。
+            这不是Meghan Slaninko（或Alexa Grace）的官方网站，只是一个粉丝俱乐部。建议访问者不要误解以及自行核实真实性。
+            我们收集的信息均基于公众人物公开发布的信息，如果我们的信息侵犯了您的个人隐私，请联系我们删除。
+            在此基础上，本网站的所有内容，例如人名、介绍、职务和故事均为虚构内容，与现实世界无关。
+  </span></h3>
+<hr>
+
+<div id="search" class="search-container">
+  <input type="text" id="searchInput" placeholder="输入姓名搜索...">
+</div>
+
+<div class="card-container">
+  <div class="card" data-name="Alexa Grace" data-rank="领袖">
+    <h2>Alexa Grace</h2>
+    <p>Drake Federation Union Joint Leader<br>
+        德雷克邦联联合首脑<br>
+        Leader of the Duchy of Bopu<br>
+        德雷克邦联博铺公国领袖<br>
+        Commander-in-Chief of the Armed Forces of the Duchy of Bopu<br>
+        博铺公国武装力量总司令
+    </p>
+    <a class="auto-link">查看详情</a>
+  </div>
+  <div class="card" data-name="Stella Cox" data-rank="中尉">
+    <h2>Stella Cox</h2>
+    <p>博铺武装力量陆军中尉</p>
+    <a class="auto-link">查看详情</a>
+  </div>
+  <div class="card" data-name="Gaby Ortega" data-rank="少尉">
+    <h2>Gaby Ortega</h2>
+    <p>博铺武装力量海军少尉</p>
+    <a class="auto-link">查看详情</a>
+  </div>
+  <div class="card" data-name="Lia Lin" data-rank="少校">
+    <h2>Lia Lin</h2>
+    <p>中级祭司军官</p>
+    <a class="auto-link">查看详情</a>
+  </div>
+  <div class="card" data-name="Shi Shi" data-rank="上校">
+    <h2>Shi Shi</h2>
+    <p>边区副参谋长&警务长官</p>
+    <a class="auto-link">查看详情</a>
+  </div>
+  <div class="card" data-name="Asi Aya" data-rank="上士">
+    <h2>Asi Aya</h2>
+    <p>军士祭司</p>
+    <a class="auto-link">查看详情</a>
+  </div>
+</div>
+
+<script>
+  const rankPriority = {
+    "领袖": 0, "元帅": 11, "大将": 12, "中将": 13, "少将": 14, "准将": 15,
+    "大校": 16, "上校": 17, "中校": 18, "少校": 19,
+    "大尉": 20, "上尉": 21, "中尉": 22, "少尉": 23, "准尉": 24,
+    "一级军士": 30, "二级军士": 31, "三级军士": 32, "四级军士": 33,
+    "上士": 34, "中士": 35, "下士": 36,
+    "一等兵": 37, "二等兵": 38, "列兵": 39,
+  };
+
+  const container = document.querySelector('.card-container');
+  const cards = Array.from(container.querySelectorAll('.card'));
+
+  cards.forEach(card => {
+    const name = card.dataset.name;
+    const clean = name.replace(/\s+/g, '');
+    const img1 = document.createElement('img');
+    img1.src = `images/${clean}/1.jpg`;
+    img1.alt = name;
+    img1.classList.add('avatar');
+
+    const img2 = document.createElement('img');
+    img2.src = `images/${clean}/2.jpg`;
+    img2.alt = name + ' Extra';
+    img2.classList.add('extra-photo');
+
+    card.insertBefore(img1, card.querySelector('h2'));
+    card.insertBefore(img2, card.querySelector('p'));
+
+    card.querySelector('.auto-link').href = `${clean}/${clean}.html`;
+
+    const rank = card.dataset.rank;
+    const h2 = card.querySelector('h2');
+
+    if (rank === "领袖") h2.style.color = "gold";
+    else if (["元帅", "大将", "中将", "少将", "准将"].includes(rank)) h2.style.color = "orange";
+    else if (["大校", "上校", "中校", "少校"].includes(rank)) h2.style.color = "silver";
+    else if (["大尉", "上尉", "中尉", "少尉", "准尉"].includes(rank)) h2.style.color = "dodgerblue";
+    else if (["上士", "中士", "下士", "一级军士", "二级军士", "三级军士", "四级军士"].includes(rank)) h2.style.color = "darkgreen";
+    else h2.style.color = "green";
+  });
+
+  cards.sort((a, b) => (rankPriority[a.dataset.rank] ?? 999) - (rankPriority[b.dataset.rank] ?? 999));
+  cards.forEach(card => container.appendChild(card));
+
+  document.getElementById('searchInput').addEventListener('input', function () {
+    const value = this.value.toLowerCase();
+    cards.forEach(card => {
+      const name = card.dataset.name.toLowerCase();
+      card.style.display = name.includes(value) ? '' : 'none';
+    });
+  });
+</script>
+
+</body>
+</html>
